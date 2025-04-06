@@ -14,5 +14,5 @@ class User(Timestamp, Base):
     __tablename__ ="users"
 
     user_id = Column(String, primary_key=True, default=str(uuid.uuid4()))
-    supabase_uid = Column(String, nullable=False)
+    supabase_uid = Column(String, index=True, nullable=False)
     email = Column(String, nullable=False)
