@@ -2,6 +2,11 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 import uvicorn
 from routers import user
+from core.dbutils import engine
+from models import models
+
+# Create all tables
+models.Base.metadata.create_all(bind=engine)
 
 app = FastAPI()
 

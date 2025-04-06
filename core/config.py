@@ -5,3 +5,4 @@ load_dotenv()
 
 class Config:
     SUPABASE_PROJECT_ID = os.getenv("SUPABASE_PROJECT_ID")
+    DATABASE_URL = os.getenv("DATABASE_URL")
