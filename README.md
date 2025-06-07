@@ -4,7 +4,7 @@
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.95.1-green.svg)](https://fastapi.tiangolo.com/)
 [![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-2.0.30-blue.svg)](https://www.sqlalchemy.org/)
 [![Supabase](https://img.shields.io/badge/Supabase-Platform-orange.svg)](https://supabase.com/)
-[![python-jose](https://img.shields.io/badge/python--jose-3.5.0-yellow.svg)](https://python-jose.readthedocs.io/)
+[![uv](https://img.shields.io/badge/uv-Package%20Manager-purple.svg)](https://github.com/astral-sh/uv)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 A starter template for building secure and scalable FastAPI applications with Supabase authentication integration. This template provides a solid foundation for modern web applications, combining the power of FastAPI's high-performance framework with Supabase's robust authentication system.
@@ -32,7 +32,7 @@ This starter template is perfect for:
 ## Prerequisites
 
 - Python 3.8+
-- pip (Python package manager)
+- uv (Python package installer)
 - Supabase account and project
 
 ## Installation
@@ -43,18 +43,18 @@ git clone <repository-url>
 cd fastapi-supabase-starter
 ```
 
-2. Create and activate a virtual environment:
+2. Install dependencies using uv:
 ```bash
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+uv venv
+.venv\Scripts\activate
+uv sync
+```
+(Optional) To add new packages to your project:
+```bash
+uv add <package-name>
 ```
 
-3. Install dependencies:
-```bash
-pip install -r requirements.txt
-```
-
-4. Set up environment variables:
+3. Set up environment variables:
 Create a `.env` file in the project root with the following variables:
 ```env
 SUPABASE_PROJECT_ID=your_project_id
@@ -66,8 +66,8 @@ DATABASE_URL=your_database_url
 
 1. Create a Supabase project at https://supabase.com
 2. Get your project credentials:
-   - Project ID: Found in Project Settings > General
-   - JWT Secret: Found in Project Settings > API > JWT Settings
+   - SUPABASE_PROJECT_ID: Found in `Project Settings > General > Project ID`
+   - SUPABASE_JWT_SECRET: Found in `Project Settings > API > JWT Settings > JWT Secret`
 3. Add these credentials to your `.env` file
 
 ## JWT Authentication
