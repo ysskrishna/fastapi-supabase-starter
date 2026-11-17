@@ -6,6 +6,7 @@
 [![Supabase](https://img.shields.io/badge/Supabase-Platform-orange.svg)](https://supabase.com/)
 [![uv](https://img.shields.io/badge/uv-Package%20Manager-purple.svg)](https://github.com/astral-sh/uv)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Author site](https://img.shields.io/badge/author-ysskrishna.space-informational)](https://ysskrishna.space)
 
 A starter template for building secure and scalable FastAPI applications with Supabase authentication integration. This template provides a solid foundation for modern web applications, combining the power of FastAPI's high-performance framework with Supabase's robust authentication system.
 
@@ -153,7 +154,7 @@ Swagger UI documentation is available at: `http://localhost:8000/docs`
 
 ### Supabase Documentation
 - [Supabase Authentication Overview](https://supabase.com/docs/guides/auth)
-- [JWT Authentication Guide](https://supabase.com/docs/guides/auth/jwt)
+- [JWT Authentication Guide](https://supabase.com/docs/guides/auth/jwts)
 - [Security Best Practices](https://supabase.com/docs/guides/auth/managing-user-data)
 - [API Reference](https://supabase.com/docs/reference/api/introduction)
 
@@ -165,6 +166,32 @@ Swagger UI documentation is available at: `http://localhost:8000/docs`
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
+## Built and maintained by
+
+FastAPI Supabase Starter is built and maintained by:
+
+| | Name | GitHub | Role |
+|---|------|--------|------|
+| <img src="https://github.com/ysskrishna.png?size=120" width="60" height="60" alt="Y. Siva Sai Krishna"> | **Y. Siva Sai Krishna** | [@ysskrishna](https://github.com/ysskrishna) | Creator |
+
+## Support
+
+If you find this project helpful:
+
+- ⭐ Star the repository
+- 🐛 [Report issues](https://github.com/ysskrishna/fastapi-supabase-starter/issues)
+- 🔀 Submit pull requests
+- 💝 [Sponsor on GitHub](https://github.com/sponsors/ysskrishna)
+
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+MIT © [Y. Siva Sai Krishna](https://github.com/ysskrishna) — see [LICENSE](LICENSE) for details.
+
+---
+
+<p align="left">
+  <a href="https://github.com/ysskrishna">Author's GitHub</a> •
+  <a href="https://linkedin.com/in/ysskrishna">Author's LinkedIn</a> •
+  <a href="https://ysskrishna.space">Author's site</a> •
+  <a href="https://github.com/ysskrishna/fastapi-supabase-starter/issues">Report Issues</a>
+</p>
